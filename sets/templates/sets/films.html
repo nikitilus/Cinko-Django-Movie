@@ -1,0 +1,23 @@
+{% extends "main/layout.html" %}
+
+{% block title %}Создание категории{% endblock title %}
+
+{% block content %}
+<h1 class='welcome'>Все фильмы</h1>
+<ul>
+    {% for film in films %}
+        <li>
+            <strong>{{ film.title }}</strong>
+            {% if film.image %}
+                <img src="{{ film.image.url }}" alt="{{ film.title }}" style="max-width:100px;">
+            {% endif %}
+            <br>
+            {{ film.description }}
+            <br>
+            Дата выхода: {{ film.release_date }}
+        </li>
+    {% empty %}
+        <li>Нет фильмов.</li>
+    {% endfor %}
+</div>
+{% endblock content %}

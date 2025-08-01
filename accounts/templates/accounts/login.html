@@ -1,0 +1,15 @@
+{% extends "main/layout.html" %}
+
+{% block title %}Вход{% endblock title %}
+
+{% block content %}
+<h1 class='welcome'>Вход в систему</h1>
+<div class="register">
+<form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Войти</button>
+</form>
+</div>
+
+{% endblock content %}

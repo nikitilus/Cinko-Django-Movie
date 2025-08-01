@@ -1,0 +1,25 @@
+{% extends "main/layout.html" %}
+
+{% block title %}Ваш профиль{% endblock title %}
+
+{% block content %}
+<div class="container profile">
+    <div class="profile-info">
+        <h2>{{ user.username }}</h2>
+        <p>Email: {{ user.email }}</p>
+        <p>Дата регистрации: {{ user.date_joined|date:"d.m.Y" }}</p>
+        <a href='#', class="container settings">Настройки<a/>
+    </div>
+</div>
+
+<div class="sections">
+    <ul>
+        <li><a href="#">Любимые фильмы</a></li>
+        <li><a href="#">Любимые сериалы</a></li>
+        <li><a href="#">Любимые актёры</a></li>
+        <li><a href="#">Любимые серии РиМ</a></li>
+    </ul>
+
+
+
+{% endblock content %}

@@ -1,0 +1,206 @@
+:root {
+    --main-gray: #8b8888;;
+}
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+body {
+    background-color: #2e2d2d;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+nav {
+    background-color: var(--main-gray);
+    color: white;
+    padding: 10px;
+    margin: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover {
+    color: #32e267;
+}
+
+/* ОТПРАВНАЯ ТОЧКА! */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background-color: #8b8888;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 220px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: rotateZ(0.5deg) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+
+.card p {
+    font-size: 0.95rem;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+
+/* Центрирование всей формы */
+            /* body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #1e1e1e; /* темная тема, можно поменять */
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', sans-serif;
+            */ 
+
+.register { 
+    margin: 0;
+    padding: 0;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Контейнер формы */
+.form-container {
+  background-color: #2c2c2c;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Заголовок формы */
+.form-container h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Сами поля ввода */
+.form-control {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: #3a3a3a;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.form-control:focus {
+  background-color: #4a4a4a;
+}
+
+/* Кнопка */
+button[type="submit"] {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container .profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    max-width: 500px;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+
+.sections {
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 300px;
+    width: auto;
+    margin-top: 100px;
+    color: #ffffff;
+}
+.sections ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sections a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
